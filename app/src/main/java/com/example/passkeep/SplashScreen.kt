@@ -28,8 +28,8 @@ class SplashScreen : AppCompatActivity() {
         }, 2000)
     }
 
-    override fun onResume() {
-        super.onResume()
+    override fun onRestart() {
+        super.onRestart()
         val intent = Intent(this, Authentication::class.java)
         startActivity(intent)
     }
