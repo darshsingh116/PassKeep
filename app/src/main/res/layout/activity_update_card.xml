@@ -26,7 +26,7 @@
         android:hint="Website"
         android:layout_marginTop="30dp"
         android:padding="15dp"
-        android:background="@drawable/custom_edittetext"
+        android:background="@drawable/custom_edittext"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
         />
@@ -38,7 +38,7 @@
         android:layout_marginTop="20dp"
         android:hint="Email"
         android:padding="15dp"
-        android:background="@drawable/custom_edittetext"
+        android:background="@drawable/custom_edittext"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
         />
@@ -49,7 +49,7 @@
         android:layout_marginTop="20dp"
         android:hint="Password"
         android:padding="15dp"
-        android:background="@drawable/custom_edittetext"
+        android:background="@drawable/custom_edittext"
         android:textColorHint="#BFBBBB"
         android:textColor="@color/white"
         />
