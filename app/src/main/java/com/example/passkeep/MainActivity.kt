@@ -4,9 +4,12 @@ package com.example.passkeep
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View.*
+import android.webkit.RenderProcessGoneDetail
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.view.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -28,11 +31,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         EditDel.setOnClickListener {
-            DataObject.deleteAll()
-            GlobalScope.launch {
-                database.dao().deleteAll()
-            }
-            setRecycler()
+            EditDel.visibility = GONE
+            cancelBtn.visibility = VISIBLE
+//            checkBox.visibility = VISIBLE
+//            DataObject.deleteAll()
+//            GlobalScope.launch {
+//                database.dao().deleteAll()
+//            }
+//            setRecycler()
+        }
+        cancelBtn.setOnClickListener{
+            EditDel.visibility = VISIBLE
+            cancelBtn.visibility = GONE
+//            checkBox.visibility = INVISIBLE
         }
 
         setRecycler()

@@ -25,18 +25,12 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
     }
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
-
-        when (data[position].email.toLowerCase()) {
-            "high" -> holder.layout.setBackgroundColor(Color.parseColor("#F05454"))
-            "medium" -> holder.layout.setBackgroundColor(Color.parseColor("#EDC988"))
-            else -> holder.layout.setBackgroundColor(Color.parseColor("#00917C"))
-        }
-
-
-
-        holder.website.text = data[position].website
-        holder.email.text = data[position].email
-        holder.password.text = data[position].password
+        val colours = arrayListOf<String>("#FF5722", "#FFC107", "#8BC34A")
+        val randomGen = colours.random()
+        holder.layout.setBackgroundColor(Color.parseColor("$randomGen"))
+        holder.website.text = "Website: " + data[position].website
+        holder.email.text = "Username: " + data[position].email
+        holder.password.text = "Password: " + data[position].password
         holder.itemView.setOnClickListener{
             val intent= Intent(holder.itemView.context, UpdateCard::class.java)
             intent.putExtra("id",position)

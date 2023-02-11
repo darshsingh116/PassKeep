@@ -8,21 +8,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="3dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#68F44336"
         app:cardCornerRadius="10dp">
 
         <LinearLayout
             android:id="@+id/mylayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="#68F44336"
             android:orientation="vertical"
             android:padding="10dp">
 
             <TextView
                 android:id="@+id/tvWebsite_view"
-                android:layout_width="293dp"
+                android:layout_width="349dp"
                 android:layout_height="41dp"
                 android:fontFamily="sans-serif"
+                android:gravity="center|center_vertical"
                 android:text="website"
                 android:textColor="@color/white"
                 android:textSize="18sp"
@@ -30,33 +32,25 @@
 
             <TextView
                 android:id="@+id/tvEmail_view"
-                android:layout_width="292dp"
+                android:layout_width="377dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="1dp"
                 android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
                 android:text="email"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvPassword_view"
-                android:layout_width="292dp"
+                android:layout_width="378dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="1dp"
                 android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
                 android:text="password"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
-
-            <CheckBox
-                android:id="@+id/checkBox"
-                android:layout_width="35dp"
-                android:layout_height="29dp"
-                android:layout_gravity="right"
-                android:layout_weight="1"
-                android:gravity="top|left"
-                android:text="CheckBox"
-                android:visibility="invisible" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
