@@ -52,5 +52,14 @@
         android:backgroundTint="#009688"
         android:text="Login"
         app:cornerRadius="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Note : This app is made by Darsh Singh(2022UCA1848) and is submitted to GDSC(NSUT) for their recruitment task"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
 
 </LinearLayout>
