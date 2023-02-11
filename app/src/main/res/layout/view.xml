@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:fontFamily="sans-serif"
-                android:gravity="center|right|center_vertical"
+                android:gravity="center|center_vertical"
                 android:text="*Click card to update or delete*"
                 android:textColor="#80000000"
                 android:textSize="10sp" />

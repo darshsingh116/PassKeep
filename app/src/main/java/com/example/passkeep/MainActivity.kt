@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         EditDel.setOnClickListener {
             MaterialAlertDialogBuilder(this)
                 .setTitle("Alert!")
-                .setMessage("Are You Sure u want to delete all passwords?")
+                .setMessage("Are you sure you want to delete all passwords?")
                 .setNeutralButton("Cancel"){ dialog, which ->}
                 .setPositiveButton("CONFIRM"){dialog, which ->
 
