@@ -4,10 +4,12 @@ package com.example.passkeep
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.View.*
 import android.webkit.RenderProcessGoneDetail
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.view.*
 import kotlinx.coroutines.GlobalScope
@@ -28,9 +30,25 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateCard::class.java)
             startActivity(intent)
         }
-/*        EditDel.setOnClickListener {
-            EditDel.visibility = GONE
-            cancelBtn.visibility = VISIBLE
+        EditDel.setOnClickListener {
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Alert!")
+                .setMessage("Are You Sure u want to delete all passwords?")
+                .setNeutralButton("Cancel"){ dialog, which ->}
+                .setPositiveButton("CONFIRM"){dialog, which ->
+
+                    DataObject.deleteAll()
+                    GlobalScope.launch {
+                        database.dao().deleteAll()
+                    }
+                    setRecycler()
+
+                }
+                .show()
+//            EditDel.visibility = GONE
+
+
+//            cancelBtn.visibility = VISIBLE
 //            checkBox.visibility = VISIBLE
 
 //            DataObject.deleteAll()
@@ -39,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 //            }
 //            setRecycler()
         }
-        cancelBtn.setOnClickListener{
+/*        cancelBtn.setOnClickListener{
             EditDel.visibility = VISIBLE
             cancelBtn.visibility = GONE
 
@@ -53,4 +71,7 @@ class MainActivity : AppCompatActivity() {
         recycler_view.adapter = Adapter(DataObject.getAllData())
         recycler_view.layoutManager = LinearLayoutManager(this)
     }
+
+
+
 }
