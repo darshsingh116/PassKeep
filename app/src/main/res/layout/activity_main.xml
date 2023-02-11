@@ -27,7 +27,7 @@
             android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold" />
-
+<!--
         <Button
             android:id="@+id/EditDel"
             android:layout_width="70dp"
@@ -53,7 +53,7 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:visibility="gone"
-            app:cornerRadius="20sp" />
+            app:cornerRadius="20sp" />-->
     </LinearLayout>
 
     <FrameLayout

@@ -25,9 +25,9 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
     }
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
-        val colours = arrayListOf<String>("#FF5722", "#FFC107", "#8BC34A")
+ /*       val colours = arrayListOf<String>("#FF5722", "#FFC107", "#8BC34A")
         val randomGen = colours.random()
-        holder.layout.setBackgroundColor(Color.parseColor("$randomGen"))
+        holder.layout.setBackgroundColor(Color.parseColor("$randomGen"))*/
         holder.website.text = "Website: " + data[position].website
         holder.email.text = "Username: " + data[position].email
         holder.password.text = "Password: " + data[position].password

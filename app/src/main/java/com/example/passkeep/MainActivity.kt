@@ -28,10 +28,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateCard::class.java)
             startActivity(intent)
         }
-        EditDel.setOnClickListener {
+/*        EditDel.setOnClickListener {
             EditDel.visibility = GONE
             cancelBtn.visibility = VISIBLE
 //            checkBox.visibility = VISIBLE
+
 //            DataObject.deleteAll()
 //            GlobalScope.launch {
 //                database.dao().deleteAll()
@@ -41,8 +42,8 @@ class MainActivity : AppCompatActivity() {
         cancelBtn.setOnClickListener{
             EditDel.visibility = VISIBLE
             cancelBtn.visibility = GONE
-//            checkBox.visibility = INVISIBLE
-        }
+
+        }*/
 
         setRecycler()
 
