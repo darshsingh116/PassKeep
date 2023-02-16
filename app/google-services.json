@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "779793519631",
+    "project_id": "passkeep-84aa0",
+    "storage_bucket": "passkeep-84aa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779793519631:android:59e8269ab37f00a4e37f7a",
+        "android_client_info": {
+          "package_name": "com.example.passkeep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779793519631-j3fl8cbnou1fglq2hg4h7skuq0pb73vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq1w8eKZPH-qqqci9qvwjQjaoi7_-iMw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779793519631-j3fl8cbnou1fglq2hg4h7skuq0pb73vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

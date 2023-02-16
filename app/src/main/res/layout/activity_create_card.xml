@@ -27,8 +27,8 @@
         android:layout_marginTop="30dp"
         android:padding="15dp"
         android:background="@drawable/custom_edittext"
-        android:textColorHint="#BFBBBB"
-        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         />
 
     <EditText
@@ -39,8 +39,8 @@
         android:hint="Email"
         android:padding="15dp"
         android:background="@drawable/custom_edittext"
-        android:textColorHint="#BFBBBB"
-        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         />
     <EditText
         android:id="@+id/create_password"
@@ -50,8 +50,8 @@
         android:hint="Password"
         android:padding="15dp"
         android:background="@drawable/custom_edittext"
-        android:textColorHint="#BFBBBB"
-        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         />
 
     <Button
