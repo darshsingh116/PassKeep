@@ -16,6 +16,7 @@
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Log In"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="36sp" />
 
@@ -48,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:boxStrokeColor="@color/yellow"
+        app:boxStrokeColor="#00000000"
         android:textColorHint="@color/black"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,19 +74,38 @@
         android:backgroundTint="#009688"
         android:text="Login"
         app:cornerRadius="20sp" />
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
     <TextView
-        android:id="@+id/signin"
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Not Registered Yet? , Click here to Sign Up !"
-        android:textColor="@color/black"
+        android:text="Not Registered Yet? , Click here to "
+        android:textColor="#AF0101"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sign Up!"
+            android:textColor="#1B7FCF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
